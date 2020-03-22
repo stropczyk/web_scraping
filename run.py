@@ -22,7 +22,7 @@ def change_string_to_int(string):
 def home():
 
     if request.method == 'GET':
-        product = []
+        products = []
     if request.method == 'POST':
         looking_for = request.form['product']
         looking_for_split = looking_for.split(' ')
@@ -39,7 +39,7 @@ def home():
         source_2 = requests.get(f'https://www.x-kom.pl/szukaj?q={source_2_phrase}').text
         soup_2 = BeautifulSoup(source_2, 'lxml')
 
-        source_2_data = []
+        products = []
         for div in soup_2.find_all('div', class_='sc-162ysh3-1 bsrTGN sc-bdVaJa cRgopZ'):
             item_image = div.find('img', class_='sc-1tblmgq-1 bxjRuC')['src']
 
@@ -48,21 +48,18 @@ def home():
             item_price_source = div.find('div', class_='sc-6n68ef-1 eOCAwm')
             item_price = item_price_source.find(class_='sc-6n68ef-3').text
 
-            source_2_data.append({'item image': item_image,
-                                  'item name': item_name,
-                                  'item price': change_string_to_int(item_price)})
+            products.append({'item image': item_image,
+                             'item name': item_name,
+                             'item price': change_string_to_int(item_price)})
 
         data_prices = []
-        for item in source_2_data:
+        for item in products:
             data_prices.append(item['item price'])
         min_price = min(data_prices)
         max_price = max(data_prices)
         medium_price = median(data_prices)
-        print(f'min value is: {min_price}')
-        print(f'max value is: {max_price}')
-        print(f'medium value is: {medium_price}')
 
-    return render_template('home.html', title='Home')
+    return render_template('home.html', title='Home', products=products)
 
 
 if __name__ == '__main__':
