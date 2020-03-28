@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if title %}
+        <title>BuyMore - {{ title }}</title>
+    {% else %}
+        <title>BuyMore</title>
+    {% endif %}
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap&subset=latin-ext" rel="stylesheet"
+          type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap&subset=latin-ext" rel="stylesheet"
+          type="text/css">
+</head>
+<body>
+    <div id="page">
+        <div id="logo">
+            BayMore PayLess
+        </div>
+        <div id="menu">
+            <div class="option" href="home">
+                <a href="home">Home</a>
+            </div>
+            <div class="option">
+                <a href="about">About</a>
+            </div>
+            <div class="option">
+                <a href="contact">Contact</a>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+        <div id="partners">
+            <div class="title">Our partners</div>
+            <div class="img">
+                <a href="https://www.morele.net/">
+                    <img src="static/img/morele.png">
+                </a>
+            </div>
+            <div class="img">
+                <a href="https://www.x-kom.pl/">
+                    <img src="static/img/x-kom.png">
+                </a>
+            </div>
+            <div class="img">
+                <a href="https://www.komputronik.pl/">
+                    <img src="static/img/komputronik.png">
+                </a>
+            </div>
+        </div>
+        <div id="content">
+            {% block content %}{% endblock %}
+        </div>
+        <div id="footer">
+            Stropczyk software &reg; Copywright &copy; 2020
+        </div>
+    </div>
+</body>
+</html>
