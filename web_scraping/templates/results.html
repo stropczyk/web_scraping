@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% block content %}
+<span class="title2">Results</span>
+<div class="dotted-line"></div>
+<div class="title">Best value:</div>
+<article>
+    <p>
+        <a href="{{ product1.link }}">
+            <img class="product-image" src="{{ product1.item_image }}" height="150">
+        </a>
+        <br>
+        <span>{{ product1.item_name }}</span>
+        <br>
+        <span>{{ product1.item_price }}</span>
+    </p>
+</article>
+<div class="dotted-line"></div>
+<div class="title">Medium value:</div>
+<article>
+    <p>
+        <a href="{{ product2.link }}">
+            <img class="product-image" src="{{ product2.item_image }}" height="150">
+        </a>
+        <br>
+        <span>{{ product2.item_name }}</span>
+        <br>
+        <span>{{ product2.item_price }}</span>
+    </p>
+</article>
+<div class="dotted-line"></div>
+<div class="title">Worst value:</div>
+<article>
+    <p>
+        <a href="{{ product3.link }}">
+            <img class="product-image" src="{{ product3.item_image }}" height="150">
+        </a>
+        <br>
+        <span>{{ product3.item_name }}</span>
+        <br>
+        <span>{{ product3.item_price }}</span>
+    </p>
+</article>
+<div class="dotted-line"></div>
+{% endblock content %}

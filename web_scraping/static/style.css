@@ -1,0 +1,151 @@
+body
+{
+}
+
+#page
+{
+    background-color: #fefbcd;
+    font-family: 'Ubuntu', sans-serif;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 5px solid #000000;
+    border-bottom: 5px solid #000000;
+    border-left: 5px solid #000000;
+    border-right: 5px solid #000000;
+}
+
+#logo
+{
+    background-color: #e0f2f8;
+    font-family: 'Lobster', cursive;
+    color: black;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 75px;
+    text-align: center;
+    font-style: italic;
+    letter-spacing: 2px;
+    border-top: 5px solid #000000;
+    border-bottom: 5px solid #000000;
+    border-left: 5px solid #000000;
+    border-right: 5px solid #000000;
+}
+
+#menu
+{
+    background-color: #82cbe3;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #09222a;
+    padding: 10px;
+    opacity: 0.8;
+    border-top: 5px solid #000000;
+    border-bottom: 5px solid #000000;
+    border-left: 5px solid #000000;
+    border-right: 5px solid #000000;
+}
+
+#partners
+{
+    background-color: #e0f2f8;
+    float:left;
+    padding: 20px;
+    width: 200px;
+    min-height: 650px;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-top: 5px solid #000000;
+    border-bottom: 5px solid #000000;
+    border-left: 5px solid #000000;
+    border-right: 5px solid #000000;
+}
+
+#content
+{
+    background-color: #e0f2f8;
+    float:left;
+    padding: 20px;
+    width: 655px;
+    min-height: 650px;
+    text-align: justify;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-top: 5px solid #000000;
+    border-bottom: 5px solid #000000;
+    border-left: 5px solid #000000;
+    border-right: 5px solid #000000;
+}
+
+#footer
+{
+    background-color: #82cbe3;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border-top: 5px solid #000000;
+    border-bottom: 5px solid #000000;
+    border-left: 5px solid #000000;
+    border-right: 5px solid #000000;
+}
+
+.option
+{
+    float: left;
+    min-width: 100px;
+    height: 22px;
+    font-size: 17px;
+    text-align: center;
+    padding: 10px;
+}
+
+.option:hover
+{
+    color: #b30000;
+}
+
+.img
+{
+    margin-top: 60px;
+}
+
+.title
+{
+    font-size: 25px;
+}
+
+.title2
+{
+    font-size: 35px;
+}
+
+.dotted-line
+{
+    height: 5px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border-bottom: 2px dotted #444444;
+}
+
+a:visited, a:link, a:hover
+{
+    text-decoration: none;
+}
+
+.product-image
+{
+    text-align: center;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
+}
